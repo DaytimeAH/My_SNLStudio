@@ -1,0 +1,76 @@
+1:  Program
+2:    ProgramHead
+3:      PROGRAM program
+3:      ProgramName
+4:        ID error
+2:    DeclarePart
+3:      TypeDecPart
+3:      VarDecPart
+4:        VarDec
+5:          VAR var
+5:          VarDecList
+6:            TypeDef
+7:              BaseType
+8:                INTEGER integer
+6:            VarIdList
+7:              ID s
+7:              VarIdMore
+6:            SEMI ;
+6:            VarDecMore
+7:              VarDecList
+8:                TypeDef
+9:                  BaseType
+10:                    INTEGER integer
+8:                VarIdList
+9:                  ID t
+9:                  VarIdMore
+8:                SEMI ;
+8:                VarDecMore
+3:      ProcDecPart
+4:        ProcDec
+5:          PROCEDURE procedure
+5:          ProcName
+6:            ID factor
+5:          LPAREN (
+5:          ParamList
+6:            ParamDecList
+7:              Param
+8:                TypeDef
+9:                  ID intaeger
+8:                FormList
+9:                  ID n
+9:                  FidMore
+7:              ParamMore
+8:                SEMI ;
+8:                ParamDecList
+9:                  Param
+10:                    VAR var
+10:                    TypeDef
+11:                      BaseType
+12:                        INTEGER integer
+10:                    FormList
+11:                      ID m
+11:                      FidMore
+9:                  ParamMore
+5:          RPAREN )
+5:          SEMI ;
+5:          ProcDecPart
+6:            DeclarePart
+7:              TypeDecPart
+7:              VarDecPart
+8:                VarDec
+9:                  VAR var
+9:                  VarDecList
+10:                    TypeDef
+11:                      BaseType
+12:                        INTEGER integer
+10:                    VarIdList
+11:                      ID w
+11:                      VarIdMore
+10:                    SEMI ;
+10:                    VarDecMore
+7:              ProcDecPart
+5:          ProcBody
+6:            ProgramBody
+7:              BEGIN begin
+line 12: unexpected token INTC_VAL sem: 002

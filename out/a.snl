@@ -1,0 +1,31 @@
+program error
+
+var integer s;
+
+    integer t;
+
+procedure factor(intaeger n;var integer m);
+
+var integer w;
+
+begin
+
+
+
+
+  factor(n-1,w);
+
+  m:=n*w
+
+
+end
+
+begin
+
+read(s);
+
+factor(s,t);
+
+write(t)
+
+end. 

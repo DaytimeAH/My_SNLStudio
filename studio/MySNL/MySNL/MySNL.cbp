@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="MySNL" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/MySNL" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/MySNL" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="ReserchLR1.cpp" />
+		<Unit filename="ReserchLR1.h" />
+		<Unit filename="Snode.cpp" />
+		<Unit filename="Snode.h" />
+		<Unit filename="include/Python-ast.h" />
+		<Unit filename="include/Python.h" />
+		<Unit filename="include/abstract.h" />
+		<Unit filename="include/accu.h" />
+		<Unit filename="include/asdl.h" />
+		<Unit filename="include/ast.h" />
+		<Unit filename="include/bitset.h" />
+		<Unit filename="include/bltinmodule.h" />
+		<Unit filename="include/boolobject.h" />
+		<Unit filename="include/bytearrayobject.h" />
+		<Unit filename="include/bytes_methods.h" />
+		<Unit filename="include/bytesobject.h" />
+		<Unit filename="include/cellobject.h" />
+		<Unit filename="include/ceval.h" />
+		<Unit filename="include/classobject.h" />
+		<Unit filename="include/code.h" />
+		<Unit filename="include/codecs.h" />
+		<Unit filename="include/compile.h" />
+		<Unit filename="include/complexobject.h" />
+		<Unit filename="include/datetime.h" />
+		<Unit filename="include/descrobject.h" />
+		<Unit filename="include/dictobject.h" />
+		<Unit filename="include/dtoa.h" />
+		<Unit filename="include/dynamic_annotations.h" />
+		<Unit filename="include/enumobject.h" />
+		<Unit filename="include/errcode.h" />
+		<Unit filename="include/eval.h" />
+		<Unit filename="include/fileobject.h" />
+		<Unit filename="include/fileutils.h" />
+		<Unit filename="include/floatobject.h" />
+		<Unit filename="include/frameobject.h" />
+		<Unit filename="include/funcobject.h" />
+		<Unit filename="include/genobject.h" />
+		<Unit filename="include/graminit.h" />
+		<Unit filename="include/grammar.h" />
+		<Unit filename="include/import.h" />
+		<Unit filename="include/intrcheck.h" />
+		<Unit filename="include/iterobject.h" />
+		<Unit filename="include/listobject.h" />
+		<Unit filename="include/longintrepr.h" />
+		<Unit filename="include/longobject.h" />
+		<Unit filename="include/marshal.h" />
+		<Unit filename="include/memoryobject.h" />
+		<Unit filename="include/metagrammar.h" />
+		<Unit filename="include/methodobject.h" />
+		<Unit filename="include/modsupport.h" />
+		<Unit filename="include/moduleobject.h" />
+		<Unit filename="include/namespaceobject.h" />
+		<Unit filename="include/node.h" />
+		<Unit filename="include/object.h" />
+		<Unit filename="include/objimpl.h" />
+		<Unit filename="include/odictobject.h" />
+		<Unit filename="include/opcode.h" />
+		<Unit filename="include/osdefs.h" />
+		<Unit filename="include/parsetok.h" />
+		<Unit filename="include/patchlevel.h" />
+		<Unit filename="include/pgen.h" />
+		<Unit filename="include/pgenheaders.h" />
+		<Unit filename="include/py_curses.h" />
+		<Unit filename="include/pyarena.h" />
+		<Unit filename="include/pyatomic.h" />
+		<Unit filename="include/pycapsule.h" />
+		<Unit filename="include/pyconfig.h" />
+		<Unit filename="include/pyctype.h" />
+		<Unit filename="include/pydebug.h" />
+		<Unit filename="include/pyerrors.h" />
+		<Unit filename="include/pyexpat.h" />
+		<Unit filename="include/pyfpe.h" />
+		<Unit filename="include/pygetopt.h" />
+		<Unit filename="include/pyhash.h" />
+		<Unit filename="include/pylifecycle.h" />
+		<Unit filename="include/pymacconfig.h" />
+		<Unit filename="include/pymacro.h" />
+		<Unit filename="include/pymath.h" />
+		<Unit filename="include/pymem.h" />
+		<Unit filename="include/pyport.h" />
+		<Unit filename="include/pystate.h" />
+		<Unit filename="include/pystrcmp.h" />
+		<Unit filename="include/pystrhex.h" />
+		<Unit filename="include/pystrtod.h" />
+		<Unit filename="include/pythonrun.h" />
+		<Unit filename="include/pythread.h" />
+		<Unit filename="include/pytime.h" />
+		<Unit filename="include/rangeobject.h" />
+		<Unit filename="include/setobject.h" />
+		<Unit filename="include/sliceobject.h" />
+		<Unit filename="include/structmember.h" />
+		<Unit filename="include/structseq.h" />
+		<Unit filename="include/symtable.h" />
+		<Unit filename="include/sysmodule.h" />
+		<Unit filename="include/token.h" />
+		<Unit filename="include/traceback.h" />
+		<Unit filename="include/tupleobject.h" />
+		<Unit filename="include/typeslots.h" />
+		<Unit filename="include/ucnhash.h" />
+		<Unit filename="include/unicodeobject.h" />
+		<Unit filename="include/warnings.h" />
+		<Unit filename="include/weakrefobject.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="parse.cpp" />
+		<Unit filename="parse.h" />
+		<Unit filename="parserLL1.cpp" />
+		<Unit filename="parserLL1.h" />
+		<Unit filename="scanner.cpp" />
+		<Unit filename="scanner.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

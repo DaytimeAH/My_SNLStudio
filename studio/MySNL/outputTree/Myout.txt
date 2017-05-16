@@ -1,0 +1,247 @@
+1:  Program
+2:    ProgramHead
+3:      PROGRAM program
+3:      ProgramName
+4:        ID sd
+2:    DeclarePart
+3:      TypeDecPart
+4:        TypeDec
+5:          TYPE type
+5:          TypeDecList
+6:            TypeId
+7:              ID i
+6:            EQ =
+6:            TypeDef
+7:              BaseType
+8:                INTEGER integer
+6:            SEMI ;
+6:            TypeDecMore
+7:              TypeDecList
+8:                TypeId
+9:                  ID sarray
+8:                EQ =
+8:                TypeDef
+9:                  StructureType
+10:                    ArrayType
+11:                      ARRAY array
+11:                      LMIDPAREN [
+11:                      Low
+12:                        INTC_VAL 0
+11:                      UNDERRANGE ..
+11:                      Top
+12:                        INTC_VAL 5
+11:                      RMIDPAREN ]
+11:                      OF of
+11:                      BaseType
+12:                        INTEGER integer
+8:                SEMI ;
+8:                TypeDecMore
+3:      VarDecPart
+4:        VarDec
+5:          VAR var
+5:          VarDecList
+6:            TypeDef
+7:              ID i
+6:            VarIdList
+7:              ID x
+7:              VarIdMore
+6:            SEMI ;
+6:            VarDecMore
+7:              VarDecList
+8:                TypeDef
+9:                  ID sarray
+8:                VarIdList
+9:                  ID y
+9:                  VarIdMore
+8:                SEMI ;
+8:                VarDecMore
+9:                  VarDecList
+10:                    TypeDef
+11:                      BaseType
+12:                        INTEGER integer
+10:                    VarIdList
+11:                      ID ss
+11:                      VarIdMore
+10:                    SEMI ;
+10:                    VarDecMore
+3:      ProcDecPart
+4:        ProcDec
+5:          PROCEDURE procedure
+5:          ProcName
+6:            ID sd
+5:          LPAREN (
+5:          ParamList
+6:            ParamDecList
+7:              Param
+8:                TypeDef
+9:                  BaseType
+10:                    INTEGER integer
+8:                FormList
+9:                  ID a
+9:                  FidMore
+7:              ParamMore
+5:          RPAREN )
+5:          SEMI ;
+5:          ProcDecPart
+5:          ProcBody
+6:            ProgramBody
+7:              BEGIN begin
+7:              StmList
+8:                Stm
+9:                  OutputStm
+10:                    WRITE write
+10:                    LPAREN (
+10:                    Exp
+11:                      Term
+12:                        Factor
+13:                          Variable
+14:                            ID a
+14:                            VariMore
+12:                        OtherFactor
+11:                      OtherTerm
+10:                    RPAREN )
+8:                StmMore
+7:              END end
+5:          ProcDecMore
+2:    ProgramBody
+3:      BEGIN begin
+3:      StmList
+4:        Stm
+5:          ID ss
+5:          AssCall
+6:            AssignmentRest
+7:              VariMore
+7:              ASSIGN :=
+7:              Exp
+8:                Term
+9:                  Factor
+10:                    INTC_VAL 0
+9:                  OtherFactor
+8:                OtherTerm
+4:        StmMore
+5:          SEMI ;
+5:          StmList
+6:            Stm
+7:              LoopStm
+8:                WHILE while
+8:                RelExp
+9:                  Exp
+10:                    Term
+11:                      Factor
+12:                        Variable
+13:                          ID ss
+13:                          VariMore
+11:                      OtherFactor
+10:                    OtherTerm
+9:                  OtherRelE
+10:                    CmpOp
+11:                      LT <
+10:                    Exp
+11:                      Term
+12:                        Factor
+13:                          INTC_VAL 6
+12:                        OtherFactor
+11:                      OtherTerm
+8:                DO do
+8:                StmList
+9:                  Stm
+10:                    ID y
+10:                    AssCall
+11:                      AssignmentRest
+12:                        VariMore
+13:                          LMIDPAREN [
+13:                          Exp
+14:                            Term
+15:                              Factor
+16:                                Variable
+17:                                  ID ss
+17:                                  VariMore
+15:                              OtherFactor
+14:                            OtherTerm
+13:                          RMIDPAREN ]
+12:                        ASSIGN :=
+12:                        Exp
+13:                          Term
+14:                            Factor
+15:                              Variable
+16:                                ID ss
+16:                                VariMore
+14:                            OtherFactor
+13:                          OtherTerm
+9:                  StmMore
+10:                    SEMI ;
+10:                    StmList
+11:                      Stm
+12:                        ID x
+12:                        AssCall
+13:                          AssignmentRest
+14:                            VariMore
+14:                            ASSIGN :=
+14:                            Exp
+15:                              Term
+16:                                Factor
+17:                                  Variable
+18:                                    ID y
+18:                                    VariMore
+19:                                      LMIDPAREN [
+19:                                      Exp
+20:                                        Term
+21:                                          Factor
+22:                                            Variable
+23:                                              ID ss
+23:                                              VariMore
+21:                                          OtherFactor
+20:                                        OtherTerm
+19:                                      RMIDPAREN ]
+16:                                OtherFactor
+15:                              OtherTerm
+11:                      StmMore
+12:                        SEMI ;
+12:                        StmList
+13:                          Stm
+14:                            ID sd
+14:                            AssCall
+15:                              CallStmRest
+16:                                LPAREN (
+16:                                ActParamList
+17:                                  Exp
+18:                                    Term
+19:                                      Factor
+20:                                        Variable
+21:                                          ID x
+21:                                          VariMore
+19:                                      OtherFactor
+18:                                    OtherTerm
+17:                                  ActParamMore
+16:                                RPAREN )
+13:                          StmMore
+14:                            SEMI ;
+14:                            StmList
+15:                              Stm
+16:                                ID ss
+16:                                AssCall
+17:                                  AssignmentRest
+18:                                    VariMore
+18:                                    ASSIGN :=
+18:                                    Exp
+19:                                      Term
+20:                                        Factor
+21:                                          Variable
+22:                                            ID ss
+22:                                            VariMore
+20:                                        OtherFactor
+19:                                      OtherTerm
+20:                                        AddOp
+21:                                          PLUS +
+20:                                        Exp
+21:                                          Term
+22:                                            Factor
+23:                                              INTC_VAL 1
+22:                                            OtherFactor
+21:                                          OtherTerm
+15:                              StmMore
+8:                ENDWH endwh
+6:            StmMore
+3:      END end
+2:    DOT .
+1:  ok LL1

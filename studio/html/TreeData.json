@@ -1,0 +1,862 @@
+{
+"name" : "Program",
+"children" : [
+{
+"name" : "ProgramHead",
+"children" : [
+{
+"name" : "PROGRAM program"
+},
+{
+"name" : "ProgramName",
+"children" : [
+{"name" : "ID sd"
+}
+]
+}
+]
+},{
+"name" : "DeclarePart",
+"children" : [
+{
+"name" : "TypeDecPart",
+"children" : [
+{
+"name" : "TypeDec",
+"children" : [
+{
+"name" : "TYPE type"
+},
+{
+"name" : "TypeDecList",
+"children" : [
+{
+"name" : "TypeId",
+"children" : [
+{"name" : "ID i"
+}
+]
+}
+,{
+"name" : "EQ ="
+},
+{
+"name" : "TypeDef",
+"children" : [
+{
+"name" : "BaseType",
+"children" : [
+{"name" : "INTEGER integer"
+}
+]
+}
+]
+},{
+"name" : "SEMI ;"
+},
+{
+"name" : "TypeDecMore",
+"children" : [
+{
+"name" : "TypeDecList",
+"children" : [
+{
+"name" : "TypeId",
+"children" : [
+{"name" : "ID sarray"
+}
+]
+}
+,{
+"name" : "EQ ="
+},
+{
+"name" : "TypeDef",
+"children" : [
+{
+"name" : "StructureType",
+"children" : [
+{
+"name" : "ArrayType",
+"children" : [
+{
+"name" : "ARRAY array"
+},
+{
+"name" : "LMIDPAREN ["
+},
+{
+"name" : "Low",
+"children" : [
+{"name" : "INTC_VAL 0"
+}
+]
+}
+,{
+"name" : "UNDERRANGE .."
+},
+{
+"name" : "Top",
+"children" : [
+{"name" : "INTC_VAL 5"
+}
+]
+}
+,{
+"name" : "RMIDPAREN ]"
+},
+{
+"name" : "OF of"
+},
+{
+"name" : "BaseType",
+"children" : [
+{"name" : "INTEGER integer"
+}
+]
+}
+]
+}]
+}]
+},{
+"name" : "SEMI ;"
+},
+{"name" : "TypeDecMore"
+}
+]
+}
+]
+}]
+}]
+}]
+},{
+"name" : "VarDecPart",
+"children" : [
+{
+"name" : "VarDec",
+"children" : [
+{
+"name" : "VAR var"
+},
+{
+"name" : "VarDecList",
+"children" : [
+{
+"name" : "TypeDef",
+"children" : [
+{"name" : "ID i"
+}
+]
+}
+,{
+"name" : "VarIdList",
+"children" : [
+{
+"name" : "ID x"
+},
+{"name" : "VarIdMore"
+}
+]
+}
+,{
+"name" : "SEMI ;"
+},
+{
+"name" : "VarDecMore",
+"children" : [
+{
+"name" : "VarDecList",
+"children" : [
+{
+"name" : "TypeDef",
+"children" : [
+{"name" : "ID sarray"
+}
+]
+}
+,{
+"name" : "VarIdList",
+"children" : [
+{
+"name" : "ID y"
+},
+{"name" : "VarIdMore"
+}
+]
+}
+,{
+"name" : "SEMI ;"
+},
+{
+"name" : "VarDecMore",
+"children" : [
+{
+"name" : "VarDecList",
+"children" : [
+{
+"name" : "TypeDef",
+"children" : [
+{
+"name" : "BaseType",
+"children" : [
+{"name" : "INTEGER integer"
+}
+]
+}
+]
+},{
+"name" : "VarIdList",
+"children" : [
+{
+"name" : "ID ss"
+},
+{"name" : "VarIdMore"
+}
+]
+}
+,{
+"name" : "SEMI ;"
+},
+{"name" : "VarDecMore"
+}
+]
+}
+]
+}]
+}]
+}]
+}]
+}]
+},{
+"name" : "ProcDecPart",
+"children" : [
+{
+"name" : "ProcDec",
+"children" : [
+{
+"name" : "PROCEDURE procedure"
+},
+{
+"name" : "ProcName",
+"children" : [
+{"name" : "ID sd"
+}
+]
+}
+,{
+"name" : "LPAREN ("
+},
+{
+"name" : "ParamList",
+"children" : [
+{
+"name" : "ParamDecList",
+"children" : [
+{
+"name" : "Param",
+"children" : [
+{
+"name" : "TypeDef",
+"children" : [
+{
+"name" : "BaseType",
+"children" : [
+{"name" : "INTEGER integer"
+}
+]
+}
+]
+},{
+"name" : "FormList",
+"children" : [
+{
+"name" : "ID a"
+},
+{"name" : "FidMore"
+}
+]
+}
+]
+},{"name" : "ParamMore"
+}
+]
+}
+]
+},{
+"name" : "RPAREN )"
+},
+{
+"name" : "SEMI ;"
+},
+{
+"name" : "ProcDecPart"
+},
+{
+"name" : "ProcBody",
+"children" : [
+{
+"name" : "ProgramBody",
+"children" : [
+{
+"name" : "BEGIN begin"
+},
+{
+"name" : "StmList",
+"children" : [
+{
+"name" : "Stm",
+"children" : [
+{
+"name" : "OutputStm",
+"children" : [
+{
+"name" : "WRITE write"
+},
+{
+"name" : "LPAREN ("
+},
+{
+"name" : "Exp",
+"children" : [
+{
+"name" : "Term",
+"children" : [
+{
+"name" : "Factor",
+"children" : [
+{
+"name" : "Variable",
+"children" : [
+{
+"name" : "ID a"
+},
+{"name" : "VariMore"
+}
+]
+}
+]
+},{"name" : "OtherFactor"
+}
+]
+}
+,{"name" : "OtherTerm"
+}
+]
+}
+,{"name" : "RPAREN )"
+}
+]
+}
+]
+},{"name" : "StmMore"
+}
+]
+}
+,{"name" : "END end"
+}
+]
+}
+]
+},{"name" : "ProcDecMore"
+}
+]
+}
+]
+}]
+},{
+"name" : "ProgramBody",
+"children" : [
+{
+"name" : "BEGIN begin"
+},
+{
+"name" : "StmList",
+"children" : [
+{
+"name" : "Stm",
+"children" : [
+{
+"name" : "ID ss"
+},
+{
+"name" : "AssCall",
+"children" : [
+{
+"name" : "AssignmentRest",
+"children" : [
+{
+"name" : "VariMore"
+},
+{
+"name" : "ASSIGN :="
+},
+{
+"name" : "Exp",
+"children" : [
+{
+"name" : "Term",
+"children" : [
+{
+"name" : "Factor",
+"children" : [
+{"name" : "INTC_VAL 0"
+}
+]
+}
+,{"name" : "OtherFactor"
+}
+]
+}
+,{"name" : "OtherTerm"
+}
+]
+}
+]
+}]
+}]
+},{
+"name" : "StmMore",
+"children" : [
+{
+"name" : "SEMI ;"
+},
+{
+"name" : "StmList",
+"children" : [
+{
+"name" : "Stm",
+"children" : [
+{
+"name" : "LoopStm",
+"children" : [
+{
+"name" : "WHILE while"
+},
+{
+"name" : "RelExp",
+"children" : [
+{
+"name" : "Exp",
+"children" : [
+{
+"name" : "Term",
+"children" : [
+{
+"name" : "Factor",
+"children" : [
+{
+"name" : "Variable",
+"children" : [
+{
+"name" : "ID ss"
+},
+{"name" : "VariMore"
+}
+]
+}
+]
+},{"name" : "OtherFactor"
+}
+]
+}
+,{"name" : "OtherTerm"
+}
+]
+}
+,{
+"name" : "OtherRelE",
+"children" : [
+{
+"name" : "CmpOp",
+"children" : [
+{"name" : "LT <"
+}
+]
+}
+,{
+"name" : "Exp",
+"children" : [
+{
+"name" : "Term",
+"children" : [
+{
+"name" : "Factor",
+"children" : [
+{"name" : "INTC_VAL 6"
+}
+]
+}
+,{"name" : "OtherFactor"
+}
+]
+}
+,{"name" : "OtherTerm"
+}
+]
+}
+]
+}]
+},{
+"name" : "DO do"
+},
+{
+"name" : "StmList",
+"children" : [
+{
+"name" : "Stm",
+"children" : [
+{
+"name" : "ID y"
+},
+{
+"name" : "AssCall",
+"children" : [
+{
+"name" : "AssignmentRest",
+"children" : [
+{
+"name" : "VariMore",
+"children" : [
+{
+"name" : "LMIDPAREN ["
+},
+{
+"name" : "Exp",
+"children" : [
+{
+"name" : "Term",
+"children" : [
+{
+"name" : "Factor",
+"children" : [
+{
+"name" : "Variable",
+"children" : [
+{
+"name" : "ID ss"
+},
+{"name" : "VariMore"
+}
+]
+}
+]
+},{"name" : "OtherFactor"
+}
+]
+}
+,{"name" : "OtherTerm"
+}
+]
+}
+,{"name" : "RMIDPAREN ]"
+}
+]
+}
+,{
+"name" : "ASSIGN :="
+},
+{
+"name" : "Exp",
+"children" : [
+{
+"name" : "Term",
+"children" : [
+{
+"name" : "Factor",
+"children" : [
+{
+"name" : "Variable",
+"children" : [
+{
+"name" : "ID ss"
+},
+{"name" : "VariMore"
+}
+]
+}
+]
+},{"name" : "OtherFactor"
+}
+]
+}
+,{"name" : "OtherTerm"
+}
+]
+}
+]
+}]
+}]
+},{
+"name" : "StmMore",
+"children" : [
+{
+"name" : "SEMI ;"
+},
+{
+"name" : "StmList",
+"children" : [
+{
+"name" : "Stm",
+"children" : [
+{
+"name" : "ID x"
+},
+{
+"name" : "AssCall",
+"children" : [
+{
+"name" : "AssignmentRest",
+"children" : [
+{
+"name" : "VariMore"
+},
+{
+"name" : "ASSIGN :="
+},
+{
+"name" : "Exp",
+"children" : [
+{
+"name" : "Term",
+"children" : [
+{
+"name" : "Factor",
+"children" : [
+{
+"name" : "Variable",
+"children" : [
+{
+"name" : "ID y"
+},
+{
+"name" : "VariMore",
+"children" : [
+{
+"name" : "LMIDPAREN ["
+},
+{
+"name" : "Exp",
+"children" : [
+{
+"name" : "Term",
+"children" : [
+{
+"name" : "Factor",
+"children" : [
+{
+"name" : "Variable",
+"children" : [
+{
+"name" : "ID ss"
+},
+{"name" : "VariMore"
+}
+]
+}
+]
+},{"name" : "OtherFactor"
+}
+]
+}
+,{"name" : "OtherTerm"
+}
+]
+}
+,{"name" : "RMIDPAREN ]"
+}
+]
+}
+]
+}]
+},{"name" : "OtherFactor"
+}
+]
+}
+,{"name" : "OtherTerm"
+}
+]
+}
+]
+}]
+}]
+},{
+"name" : "StmMore",
+"children" : [
+{
+"name" : "SEMI ;"
+},
+{
+"name" : "StmList",
+"children" : [
+{
+"name" : "Stm",
+"children" : [
+{
+"name" : "ID sd"
+},
+{
+"name" : "AssCall",
+"children" : [
+{
+"name" : "CallStmRest",
+"children" : [
+{
+"name" : "LPAREN ("
+},
+{
+"name" : "ActParamList",
+"children" : [
+{
+"name" : "Exp",
+"children" : [
+{
+"name" : "Term",
+"children" : [
+{
+"name" : "Factor",
+"children" : [
+{
+"name" : "Variable",
+"children" : [
+{
+"name" : "ID x"
+},
+{"name" : "VariMore"
+}
+]
+}
+]
+},{"name" : "OtherFactor"
+}
+]
+}
+,{"name" : "OtherTerm"
+}
+]
+}
+,{"name" : "ActParamMore"
+}
+]
+}
+,{"name" : "RPAREN )"
+}
+]
+}
+]
+}]
+},{
+"name" : "StmMore",
+"children" : [
+{
+"name" : "SEMI ;"
+},
+{
+"name" : "StmList",
+"children" : [
+{
+"name" : "Stm",
+"children" : [
+{
+"name" : "ID ss"
+},
+{
+"name" : "AssCall",
+"children" : [
+{
+"name" : "AssignmentRest",
+"children" : [
+{
+"name" : "VariMore"
+},
+{
+"name" : "ASSIGN :="
+},
+{
+"name" : "Exp",
+"children" : [
+{
+"name" : "Term",
+"children" : [
+{
+"name" : "Factor",
+"children" : [
+{
+"name" : "Variable",
+"children" : [
+{
+"name" : "ID ss"
+},
+{"name" : "VariMore"
+}
+]
+}
+]
+},{"name" : "OtherFactor"
+}
+]
+}
+,{
+"name" : "OtherTerm",
+"children" : [
+{
+"name" : "AddOp",
+"children" : [
+{"name" : "PLUS +"
+}
+]
+}
+,{
+"name" : "Exp",
+"children" : [
+{
+"name" : "Term",
+"children" : [
+{
+"name" : "Factor",
+"children" : [
+{"name" : "INTC_VAL 1"
+}
+]
+}
+,{"name" : "OtherFactor"
+}
+]
+}
+,{"name" : "OtherTerm"
+}
+]
+}
+]
+}]
+}]
+}]
+}]
+},{"name" : "StmMore"
+}
+]
+}
+]
+}]
+}]
+}]
+}]
+}]
+},{"name" : "ENDWH endwh"
+}
+]
+}
+]
+},{"name" : "StmMore"
+}
+]
+}
+]
+}]
+},{"name" : "END end"
+}
+]
+}
+,{"name" : "DOT ."
+}
+]
+}

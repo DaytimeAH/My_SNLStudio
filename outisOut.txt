@@ -1,0 +1,84 @@
+2 C:/Users/DarknessH/Desktop/myIntelliStudio/out/a.snl C:/Users/DarknessH/Desktop/myIntelliStudio/out
+Starting lexical analysis: 
+0 : PROGRAM , program
+0 : ID , sd
+2 : TYPE , type
+2 : ID , i
+2 : = , =
+2 : INTEGER , integer
+2 : ; , ;
+4 : ID , sarray
+4 : = , =
+4 : ARRAY , array
+4 : [ , [
+4 : INTC_VAL , 0
+4 : .. , ..
+4 : INTC_VAL , 5
+4 : ] , ]
+4 : OF , of
+4 : INTEGER , integer
+4 : ; , ;
+6 : VAR , var
+6 : ID , i
+6 : ID , x
+6 : ; , ;
+8 : ID , sarray
+8 : ID , y
+8 : ; , ;
+10 : INTEGER , integer
+10 : ID , ss
+10 : ; , ;
+12 : PROCEDURE , procedure
+12 : ID , sd
+12 : ( , (
+12 : INTEGER , integer
+12 : ID , a
+12 : ) , )
+12 : ; , ;
+14 : BEGIN , begin
+16 : WRITE , write
+16 : ( , (
+16 : ID , a
+16 : ) , )
+18 : END , end
+20 : BEGIN , begin
+22 : ID , ss
+22 : := , :=
+22 : INTC_VAL , 0
+22 : ; , ;
+24 : WHILE , while
+24 : ID , ss
+24 : DO , do
+26 : ID , y
+26 : [ , [
+26 : ID , ss
+26 : ] , ]
+26 : := , :=
+26 : ID , ss
+26 : ; , ;
+28 : ID , x
+28 : := , :=
+28 : ID , y
+28 : [ , [
+28 : ID , ss
+28 : ] , ]
+28 : ; , ;
+30 : ID , sd
+30 : ( , (
+30 : ID , x
+30 : ) , )
+30 : ; , ;
+32 : ID , ss
+32 : := , :=
+32 : ID , ss
+32 : + , +
+32 : INTC_VAL , 1
+34 : ENDWH , endwh
+36 : END , end
+36 : .. , ..
+ok
+Staring LL1 analysis: result save to Myout.txt
+1:  fuck
+LL1: Error occured.
+ok LL1
+

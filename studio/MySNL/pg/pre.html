@@ -1,0 +1,531 @@
+<h2>Predict Set</h2>
+<a class='nav-anchor' id='predict-set'></a>
+<div class"row"><div id="predict-table-wrapper" class="set-table-wrapper"><table id="predict-table" class="set-table">
+  <tr>
+    <td class="prod-num">1</td>
+    <td class="expression">Program &rarr; ProgramHead DeclarePart ProgramBody DOT</td>
+    <td class="predict">PROGRAM</td>
+  </tr>
+  <tr>
+    <td class="prod-num">2</td>
+    <td class="expression">ProgramHead &rarr; PROGRAM ProgramName</td>
+    <td class="predict">PROGRAM</td>
+  </tr>
+  <tr>
+    <td class="prod-num">3</td>
+    <td class="expression">ProgramName &rarr; ID</td>
+    <td class="predict">ID</td>
+  </tr>
+  <tr>
+    <td class="prod-num">4</td>
+    <td class="expression">DeclarePart &rarr; TypeDecPart VarDecPart ProcDecPart</td>
+    <td class="predict">TYPE, VAR, PROCEDURE</td>
+  </tr>
+  <tr>
+    <td class="prod-num">5</td>
+    <td class="expression">TypeDecPart &rarr; &#949;</td>
+    <td class="predict">PROCEDURE, VAR, BEGIN</td>
+  </tr>
+  <tr>
+    <td class="prod-num">6</td>
+    <td class="expression">TypeDecPart &rarr; TypeDec</td>
+    <td class="predict">TYPE</td>
+  </tr>
+  <tr>
+    <td class="prod-num">7</td>
+    <td class="expression">TypeDec &rarr; TYPE TypeDecList</td>
+    <td class="predict">TYPE</td>
+  </tr>
+  <tr>
+    <td class="prod-num">8</td>
+    <td class="expression">TypeDecList &rarr; TypeId EQ TypeDef SEMI TypeDecMore</td>
+    <td class="predict">ID</td>
+  </tr>
+  <tr>
+    <td class="prod-num">9</td>
+    <td class="expression">TypeDecMore &rarr; &#949;</td>
+    <td class="predict">PROCEDURE, VAR, BEGIN</td>
+  </tr>
+  <tr>
+    <td class="prod-num">10</td>
+    <td class="expression">TypeDecMore &rarr; TypeDecList</td>
+    <td class="predict">ID</td>
+  </tr>
+  <tr>
+    <td class="prod-num">11</td>
+    <td class="expression">TypeId &rarr; ID</td>
+    <td class="predict">ID</td>
+  </tr>
+  <tr>
+    <td class="prod-num">12</td>
+    <td class="expression">TypeDef &rarr; BaseType</td>
+    <td class="predict">INTEGER, CHAR</td>
+  </tr>
+  <tr>
+    <td class="prod-num">13</td>
+    <td class="expression">TypeDef &rarr; StructureType</td>
+    <td class="predict">ARRAY, RECORD</td>
+  </tr>
+  <tr>
+    <td class="prod-num">14</td>
+    <td class="expression">TypeDef &rarr; ID</td>
+    <td class="predict">ID</td>
+  </tr>
+  <tr>
+    <td class="prod-num">15</td>
+    <td class="expression">BaseType &rarr; INTEGER</td>
+    <td class="predict">INTEGER</td>
+  </tr>
+  <tr>
+    <td class="prod-num">16</td>
+    <td class="expression">BaseType &rarr; CHAR</td>
+    <td class="predict">CHAR</td>
+  </tr>
+  <tr>
+    <td class="prod-num">17</td>
+    <td class="expression">StructureType &rarr; ArrayType</td>
+    <td class="predict">ARRAY</td>
+  </tr>
+  <tr>
+    <td class="prod-num">18</td>
+    <td class="expression">StructureType &rarr; RecType</td>
+    <td class="predict">RECORD</td>
+  </tr>
+  <tr>
+    <td class="prod-num">19</td>
+    <td class="expression">ArrayType &rarr; ARRAY LMIDPAREN Low UNDERRANGE Top RMIDPAREN OF BaseType</td>
+    <td class="predict">ARRAY</td>
+  </tr>
+  <tr>
+    <td class="prod-num">20</td>
+    <td class="expression">Low &rarr; INTC_VAL</td>
+    <td class="predict">INTC_VAL</td>
+  </tr>
+  <tr>
+    <td class="prod-num">21</td>
+    <td class="expression">Top &rarr; INTC_VAL</td>
+    <td class="predict">INTC_VAL</td>
+  </tr>
+  <tr>
+    <td class="prod-num">22</td>
+    <td class="expression">RecType &rarr; RECORD FieldDecList END</td>
+    <td class="predict">RECORD</td>
+  </tr>
+  <tr>
+    <td class="prod-num">23</td>
+    <td class="expression">FieldDecList &rarr; BaseType IdList SEMI FieldDecMore</td>
+    <td class="predict">INTEGER, CHAR</td>
+  </tr>
+  <tr>
+    <td class="prod-num">24</td>
+    <td class="expression">FieldDecList &rarr; ArrayType IdList SEMI FieldDecMore</td>
+    <td class="predict">ARRAY</td>
+  </tr>
+  <tr>
+    <td class="prod-num">25</td>
+    <td class="expression">FieldDecMore &rarr; &#949;</td>
+    <td class="predict">END</td>
+  </tr>
+  <tr>
+    <td class="prod-num">26</td>
+    <td class="expression">FieldDecMore &rarr; FieldDecList</td>
+    <td class="predict">INTEGER, CHAR, ARRAY</td>
+  </tr>
+  <tr>
+    <td class="prod-num">27</td>
+    <td class="expression">IdList &rarr; ID IdMore</td>
+    <td class="predict">ID</td>
+  </tr>
+  <tr>
+    <td class="prod-num">28</td>
+    <td class="expression">IdMore &rarr; &#949;</td>
+    <td class="predict">SEMI</td>
+  </tr>
+  <tr>
+    <td class="prod-num">29</td>
+    <td class="expression">IdMore &rarr; COMMA IdList</td>
+    <td class="predict">COMMA</td>
+  </tr>
+  <tr>
+    <td class="prod-num">30</td>
+    <td class="expression">VarDecPart &rarr; &#949;</td>
+    <td class="predict">PROCEDURE, BEGIN</td>
+  </tr>
+  <tr>
+    <td class="prod-num">31</td>
+    <td class="expression">VarDecPart &rarr; VarDec</td>
+    <td class="predict">VAR</td>
+  </tr>
+  <tr>
+    <td class="prod-num">32</td>
+    <td class="expression">VarDec &rarr; VAR VarDecList</td>
+    <td class="predict">VAR</td>
+  </tr>
+  <tr>
+    <td class="prod-num">33</td>
+    <td class="expression">VarDecList &rarr; TypeDef VarIdList SEMI VarDecMore</td>
+    <td class="predict">ID, INTEGER, CHAR, ARRAY, RECORD</td>
+  </tr>
+  <tr>
+    <td class="prod-num">34</td>
+    <td class="expression">VarDecMore &rarr; &#949;</td>
+    <td class="predict">PROCEDURE, BEGIN</td>
+  </tr>
+  <tr>
+    <td class="prod-num">35</td>
+    <td class="expression">VarDecMore &rarr; VarDecList</td>
+    <td class="predict">ID, INTEGER, CHAR, ARRAY, RECORD</td>
+  </tr>
+  <tr>
+    <td class="prod-num">36</td>
+    <td class="expression">VarIdList &rarr; ID VarIdMore</td>
+    <td class="predict">ID</td>
+  </tr>
+  <tr>
+    <td class="prod-num">37</td>
+    <td class="expression">VarIdMore &rarr; &#949;</td>
+    <td class="predict">SEMI</td>
+  </tr>
+  <tr>
+    <td class="prod-num">38</td>
+    <td class="expression">VarIdMore &rarr; COMMA VarIdList</td>
+    <td class="predict">COMMA</td>
+  </tr>
+  <tr>
+    <td class="prod-num">39</td>
+    <td class="expression">ProcDecPart &rarr; &#949;</td>
+    <td class="predict">BEGIN</td>
+  </tr>
+  <tr>
+    <td class="prod-num">40</td>
+    <td class="expression">ProcDecPart &rarr; ProcDec</td>
+    <td class="predict">PROCEDURE</td>
+  </tr>
+  <tr>
+    <td class="prod-num">41</td>
+    <td class="expression">ProcDecPart &rarr; DeclarePart</td>
+    <td class="predict">TYPE, VAR</td>
+  </tr>
+  <tr>
+    <td class="prod-num">42</td>
+    <td class="expression">ProcDec &rarr; PROCEDURE   ProcName   LPAREN ParamList RPAREN SEMI ProcDecPart ProcBody  ProcDecMore</td>
+    <td class="predict">PROCEDURE</td>
+  </tr>
+  <tr>
+    <td class="prod-num">43</td>
+    <td class="expression">ProcDecMore &rarr; &#949;</td>
+    <td class="predict">BEGIN</td>
+  </tr>
+  <tr>
+    <td class="prod-num">44</td>
+    <td class="expression">ProcDecMore &rarr; ProcDec</td>
+    <td class="predict">PROCEDURE</td>
+  </tr>
+  <tr>
+    <td class="prod-num">45</td>
+    <td class="expression">ProcName &rarr; ID</td>
+    <td class="predict">ID</td>
+  </tr>
+  <tr>
+    <td class="prod-num">46</td>
+    <td class="expression">ParamList &rarr; &#949;</td>
+    <td class="predict">RPAREN</td>
+  </tr>
+  <tr>
+    <td class="prod-num">47</td>
+    <td class="expression">ParamList &rarr; ParamDecList</td>
+    <td class="predict">VAR, ID, INTEGER, CHAR, ARRAY, RECORD</td>
+  </tr>
+  <tr>
+    <td class="prod-num">48</td>
+    <td class="expression">ParamDecList &rarr; Param ParamMore</td>
+    <td class="predict">VAR, ID, INTEGER, CHAR, ARRAY, RECORD</td>
+  </tr>
+  <tr>
+    <td class="prod-num">49</td>
+    <td class="expression">ParamMore &rarr; &#949;</td>
+    <td class="predict">RPAREN</td>
+  </tr>
+  <tr>
+    <td class="prod-num">50</td>
+    <td class="expression">ParamMore &rarr; SEMI ParamDecList</td>
+    <td class="predict">SEMI</td>
+  </tr>
+  <tr>
+    <td class="prod-num">51</td>
+    <td class="expression">Param &rarr; TypeDef FormList</td>
+    <td class="predict">ID, INTEGER, CHAR, ARRAY, RECORD</td>
+  </tr>
+  <tr>
+    <td class="prod-num">52</td>
+    <td class="expression">Param &rarr; VAR TypeDef FormList</td>
+    <td class="predict">VAR</td>
+  </tr>
+  <tr>
+    <td class="prod-num">53</td>
+    <td class="expression">FormList &rarr; ID FidMore</td>
+    <td class="predict">ID</td>
+  </tr>
+  <tr>
+    <td class="prod-num">54</td>
+    <td class="expression">FidMore &rarr; &#949;</td>
+    <td class="predict">SEMI, RPAREN</td>
+  </tr>
+  <tr>
+    <td class="prod-num">55</td>
+    <td class="expression">FidMore &rarr; COMMA FormList</td>
+    <td class="predict">COMMA</td>
+  </tr>
+  <tr>
+    <td class="prod-num">56</td>
+    <td class="expression">ProcBody &rarr; ProgramBody</td>
+    <td class="predict">BEGIN</td>
+  </tr>
+  <tr>
+    <td class="prod-num">57</td>
+    <td class="expression">ProgramBody &rarr; BEGIN StmList END</td>
+    <td class="predict">BEGIN</td>
+  </tr>
+  <tr>
+    <td class="prod-num">58</td>
+    <td class="expression">StmList &rarr; Stm StmMore</td>
+    <td class="predict">ID, IF, READ, RETURN, WHILE, WRITE</td>
+  </tr>
+  <tr>
+    <td class="prod-num">59</td>
+    <td class="expression">StmMore &rarr; &#949;</td>
+    <td class="predict">ENDWH, ELSE, FI, END</td>
+  </tr>
+  <tr>
+    <td class="prod-num">60</td>
+    <td class="expression">StmMore &rarr; SEMI StmList</td>
+    <td class="predict">SEMI</td>
+  </tr>
+  <tr>
+    <td class="prod-num">61</td>
+    <td class="expression">Stm &rarr; ConditionalStm</td>
+    <td class="predict">IF</td>
+  </tr>
+  <tr>
+    <td class="prod-num">62</td>
+    <td class="expression">Stm &rarr; LoopStm</td>
+    <td class="predict">WHILE</td>
+  </tr>
+  <tr>
+    <td class="prod-num">63</td>
+    <td class="expression">Stm &rarr; InputStm</td>
+    <td class="predict">READ</td>
+  </tr>
+  <tr>
+    <td class="prod-num">64</td>
+    <td class="expression">Stm &rarr; OutputStm</td>
+    <td class="predict">WRITE</td>
+  </tr>
+  <tr>
+    <td class="prod-num">65</td>
+    <td class="expression">Stm &rarr; ReturnStm</td>
+    <td class="predict">RETURN</td>
+  </tr>
+  <tr>
+    <td class="prod-num">66</td>
+    <td class="expression">Stm &rarr; ID AssCall</td>
+    <td class="predict">ID</td>
+  </tr>
+  <tr>
+    <td class="prod-num">67</td>
+    <td class="expression">AssCall &rarr; AssignmentRest</td>
+    <td class="predict">ASSIGN, LMIDPAREN, DOT</td>
+  </tr>
+  <tr>
+    <td class="prod-num">68</td>
+    <td class="expression">AssCall &rarr; CallStmRest</td>
+    <td class="predict">LPAREN</td>
+  </tr>
+  <tr>
+    <td class="prod-num">69</td>
+    <td class="expression">AssignmentRest &rarr; VariMore ASSIGN Exp</td>
+    <td class="predict">LMIDPAREN, DOT, ASSIGN</td>
+  </tr>
+  <tr>
+    <td class="prod-num">70</td>
+    <td class="expression">ConditionalStm &rarr; IF RelExp THEN StmList ELSE StmList FI</td>
+    <td class="predict">IF</td>
+  </tr>
+  <tr>
+    <td class="prod-num">71</td>
+    <td class="expression">LoopStm &rarr; WHILE RelExp DO StmList ENDWH</td>
+    <td class="predict">WHILE</td>
+  </tr>
+  <tr>
+    <td class="prod-num">72</td>
+    <td class="expression">InputStm &rarr; READ LPAREN Invar RPAREN</td>
+    <td class="predict">READ</td>
+  </tr>
+  <tr>
+    <td class="prod-num">73</td>
+    <td class="expression">Invar &rarr; ID</td>
+    <td class="predict">ID</td>
+  </tr>
+  <tr>
+    <td class="prod-num">74</td>
+    <td class="expression">OutputStm &rarr; WRITE LPAREN Exp RPAREN</td>
+    <td class="predict">WRITE</td>
+  </tr>
+  <tr>
+    <td class="prod-num">75</td>
+    <td class="expression">ReturnStm &rarr; RETURN</td>
+    <td class="predict">RETURN</td>
+  </tr>
+  <tr>
+    <td class="prod-num">76</td>
+    <td class="expression">CallStmRest &rarr; LPAREN ActParamList RPAREN</td>
+    <td class="predict">LPAREN</td>
+  </tr>
+  <tr>
+    <td class="prod-num">77</td>
+    <td class="expression">ActParamList &rarr; &#949;</td>
+    <td class="predict">RPAREN</td>
+  </tr>
+  <tr>
+    <td class="prod-num">78</td>
+    <td class="expression">ActParamList &rarr; Exp ActParamMore</td>
+    <td class="predict">LPAREN, INTC_VAL, ID</td>
+  </tr>
+  <tr>
+    <td class="prod-num">79</td>
+    <td class="expression">ActParamMore &rarr; &#949;</td>
+    <td class="predict">RPAREN</td>
+  </tr>
+  <tr>
+    <td class="prod-num">80</td>
+    <td class="expression">ActParamMore &rarr; COMMA ActParamList</td>
+    <td class="predict">COMMA</td>
+  </tr>
+  <tr>
+    <td class="prod-num">81</td>
+    <td class="expression">RelExp &rarr; Exp OtherRelE</td>
+    <td class="predict">LPAREN, INTC_VAL, ID</td>
+  </tr>
+  <tr>
+    <td class="prod-num">82</td>
+    <td class="expression">OtherRelE &rarr; CmpOp Exp</td>
+    <td class="predict">LT, EQ</td>
+  </tr>
+  <tr>
+    <td class="prod-num">83</td>
+    <td class="expression">Exp &rarr; Term OtherTerm</td>
+    <td class="predict">LPAREN, INTC_VAL, ID</td>
+  </tr>
+  <tr>
+    <td class="prod-num">84</td>
+    <td class="expression">OtherTerm &rarr; &#949;</td>
+    <td class="predict">RMIDPAREN, RPAREN, LT, EQ, COMMA, DO, THEN, SEMI, ENDWH, ELSE, FI, END</td>
+  </tr>
+  <tr>
+    <td class="prod-num">85</td>
+    <td class="expression">OtherTerm &rarr; AddOp Exp</td>
+    <td class="predict">PLUS, MINUS</td>
+  </tr>
+  <tr>
+    <td class="prod-num">86</td>
+    <td class="expression">Term &rarr; Factor OtherFactor</td>
+    <td class="predict">LPAREN, INTC_VAL, ID</td>
+  </tr>
+  <tr>
+    <td class="prod-num">87</td>
+    <td class="expression">OtherFactor &rarr; &#949;</td>
+    <td class="predict">PLUS, MINUS, RMIDPAREN, RPAREN, LT, EQ, COMMA, DO, THEN, SEMI, ENDWH, ELSE, FI, END</td>
+  </tr>
+  <tr>
+    <td class="prod-num">88</td>
+    <td class="expression">OtherFactor &rarr; MultOp  Term</td>
+    <td class="predict">TIMES, DIVIDE</td>
+  </tr>
+  <tr>
+    <td class="prod-num">89</td>
+    <td class="expression">Factor &rarr; LPAREN Exp RPAREN</td>
+    <td class="predict">LPAREN</td>
+  </tr>
+  <tr>
+    <td class="prod-num">90</td>
+    <td class="expression">Factor &rarr; INTC_VAL</td>
+    <td class="predict">INTC_VAL</td>
+  </tr>
+  <!--Jerryw added, form like `c:='a'` should also be right-->
+  <tr>
+    <td class="prod-num">90</td>
+    <td class="expression">Factor &rarr; CHAR_VAL</td>
+    <td class="predict">CHAR_VAL</td>
+  </tr>
+  <!--=====================================================-->
+  <tr>
+    <td class="prod-num">91</td>
+    <td class="expression">Factor &rarr; Variable</td>
+    <td class="predict">ID</td>
+  </tr>
+  <tr>
+    <td class="prod-num">92</td>
+    <td class="expression">Variable &rarr; ID VariMore</td>
+    <td class="predict">ID</td>
+  </tr>
+  <tr>
+    <td class="prod-num">93</td>
+    <td class="expression">VariMore &rarr; &#949;</td>
+    <td class="predict">ASSIGN, TIMES, DIVIDE, PLUS, MINUS, RMIDPAREN, RPAREN, LT, EQ, COMMA, DO, THEN, SEMI, ENDWH, ELSE, FI, END</td>
+  </tr>
+  <tr>
+    <td class="prod-num">94</td>
+    <td class="expression">VariMore &rarr; LMIDPAREN Exp RMIDPAREN</td>
+    <td class="predict">LMIDPAREN</td>
+  </tr>
+  <tr>
+    <td class="prod-num">95</td>
+    <td class="expression">VariMore &rarr; DOT FieldVar</td>
+    <td class="predict">DOT</td>
+  </tr>
+  <tr>
+    <td class="prod-num">96</td>
+    <td class="expression">FieldVar &rarr; ID FieldVarMore</td>
+    <td class="predict">ID</td>
+  </tr>
+  <tr>
+    <td class="prod-num">97</td>
+    <td class="expression">FieldVarMore &rarr; &#949;</td>
+    <td class="predict">ASSIGN, TIMES, DIVIDE, PLUS, MINUS, RMIDPAREN, RPAREN, LT, EQ, COMMA, DO, THEN, SEMI, ENDWH, ELSE, FI, END</td>
+  </tr>
+  <tr>
+    <td class="prod-num">98</td>
+    <td class="expression">FieldVarMore &rarr; LMIDPAREN Exp RMIDPAREN</td>
+    <td class="predict">LMIDPAREN</td>
+  </tr>
+  <tr>
+    <td class="prod-num">99</td>
+    <td class="expression">CmpOp &rarr; LT</td>
+    <td class="predict">LT</td>
+  </tr>
+  <tr>
+    <td class="prod-num">100</td>
+    <td class="expression">CmpOp &rarr; EQ</td>
+    <td class="predict">EQ</td>
+  </tr>
+  <tr>
+    <td class="prod-num">101</td>
+    <td class="expression">AddOp &rarr; PLUS</td>
+    <td class="predict">PLUS</td>
+  </tr>
+  <tr>
+    <td class="prod-num">102</td>
+    <td class="expression">AddOp &rarr; MINUS</td>
+    <td class="predict">MINUS</td>
+  </tr>
+  <tr>
+    <td class="prod-num">103</td>
+    <td class="expression">MultOp &rarr; TIMES</td>
+    <td class="predict">TIMES</td>
+  </tr>
+  <tr>
+    <td class="prod-num">104</td>
+    <td class="expression">MultOp &rarr; DIVIDE</td>
+    <td class="predict">DIVIDE</td>
+  </tr>
+</table></div></div>

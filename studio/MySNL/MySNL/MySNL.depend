@@ -1,0 +1,500 @@
+# depslib dependency file v1.0
+1494340754 source:c:\users\win\desktop\编译原理\mysnl\mysnl\main.cpp
+	<iostream>
+	"scanner.h"
+	"parse.h"
+	"parserLL1.h"
+
+1493440554 c:\users\win\desktop\编译原理\mysnl\mysnl\lex.h
+	<cstring>
+	<map>
+	<fstream>
+
+1493442133 source:c:\users\win\desktop\编译原理\mysnl\mysnl\scaner.cpp
+	<iostream>
+	<cctype>
+	<string>
+	"scanner.h"
+
+1493442548 c:\users\win\desktop\编译原理\mysnl\mysnl\scanner.h
+	<cstring>
+	<map>
+	<fstream>
+
+1493448963 source:c:\users\win\desktop\编译原理\mysnl\mysnl\snode.cpp
+	<iostream>
+	"Snode.h"
+
+1493448963 c:\users\win\desktop\编译原理\mysnl\mysnl\snode.h
+	<string>
+	<vector>
+
+1494201681 c:\users\win\desktop\编译原理\mysnl\mysnl\parse.h
+	"Snode.h"
+	"scanner.h"
+
+1494201575 source:c:\users\win\desktop\编译原理\mysnl\mysnl\parse.cpp
+	"parse.h"
+	<iostream>
+
+1494205506 c:\users\win\desktop\编译原理\mysnl\mysnl\parserll1.h
+	<cstring>
+	<map>
+	<fstream>
+	"parse.h"
+
+1494340835 source:c:\users\win\desktop\编译原理\mysnl\mysnl\parserll1.cpp
+	<iostream>
+	<cstring>
+	<map>
+	<stack>
+	<fstream>
+	"parserLL1.h"
+
+1494201575 source:c:\users\darknessh\desktop\mysnl\mysnl\parse.cpp
+	"parse.h"
+	<iostream>
+
+1494201681 c:\users\darknessh\desktop\mysnl\mysnl\parse.h
+	"Snode.h"
+	"scanner.h"
+
+1493448963 c:\users\darknessh\desktop\mysnl\mysnl\snode.h
+	<string>
+	<vector>
+
+1494592114 c:\users\darknessh\desktop\mysnl\mysnl\scanner.h
+	<cstring>
+	<map>
+	<fstream>
+
+1494594739 source:c:\users\darknessh\desktop\mysnl\mysnl\parserll1.cpp
+	<iostream>
+	<cstring>
+	<map>
+	<stack>
+	<fstream>
+	"parserLL1.h"
+
+1494588357 c:\users\darknessh\desktop\mysnl\mysnl\parserll1.h
+	<cstring>
+	<map>
+	<fstream>
+	"parse.h"
+
+1493448963 source:c:\users\darknessh\desktop\mysnl\mysnl\snode.cpp
+	<iostream>
+	"Snode.h"
+
+1494432102 source:c:\users\darknessh\desktop\mysnl\mysnl\scaner.cpp
+	<iostream>
+	<cctype>
+	<string>
+	"scanner.h"
+
+1494598796 source:c:\users\darknessh\desktop\mysnl\mysnl\main.cpp
+	<iostream>
+	"scanner.h"
+	"parse.h"
+	"parserLL1.h"
+
+1494743339 source:c:\users\daytime\desktop\complier\mysnl\mysnl\parse.cpp
+	"parse.h"
+	<iostream>
+
+1494691891 c:\users\daytime\desktop\complier\mysnl\mysnl\parse.h
+	"Snode.h"
+	"scanner.h"
+
+1494691877 c:\users\daytime\desktop\complier\mysnl\mysnl\snode.h
+	<string>
+	<vector>
+
+1494691503 c:\users\daytime\desktop\complier\mysnl\mysnl\scanner.h
+	<map>
+	<cstring>
+	<fstream>
+
+1494693676 source:c:\users\daytime\desktop\complier\mysnl\mysnl\parserll1.cpp
+	<map>
+	<stack>
+	<fstream>
+	<cstring>
+	<iostream>
+	"parserLL1.h"
+
+1494693737 c:\users\daytime\desktop\complier\mysnl\mysnl\parserll1.h
+	<cstring>
+	<map>
+	<fstream>
+	"parse.h"
+
+1494691918 source:c:\users\daytime\desktop\complier\mysnl\mysnl\snode.cpp
+	<iostream>
+	"Snode.h"
+
+1494746840 source:c:\users\daytime\desktop\complier\mysnl\mysnl\main.cpp
+	<iostream>
+	"scanner.h"
+	"parse.h"
+	"parserLL1.h"
+	"ReserchLR1.h"
+
+1494656207 source:c:\users\daytime\desktop\complier\mysnl\mysnl\scaner.cpp
+	<iostream>
+	<cctype>
+	<string>
+	"scanner.h"
+
+1494691408 c:\users\daytime\desktop\complier\mysnl\mysnl\reserchlr1.h
+	<cstdio>
+	<cstring>
+	<map>
+	<vector>
+	<queue>
+	<algorithm>
+	"stdio.h"
+	<iostream>
+	<string>
+	<fstream>
+	<string.h>
+	<stack>
+	"scanner.h"
+
+1494693823 source:c:\users\daytime\desktop\complier\mysnl\mysnl\reserchlr1.cpp
+	"ReserchLR1.h"
+
+1494680029 source:c:\users\daytime\desktop\complier\mysnl\mysnl\scanner.cpp
+	<iostream>
+	<cctype>
+	<string>
+	"scanner.h"
+
+1494851691 source:c:\users\darknessh\desktop\myintellistudio\studio\mysnl\mysnl\parse.cpp
+	"parse.h"
+	<iostream>
+
+1494851677 c:\users\darknessh\desktop\myintellistudio\studio\mysnl\mysnl\parse.h
+	"Snode.h"
+	"scanner.h"
+
+1494691877 c:\users\darknessh\desktop\myintellistudio\studio\mysnl\mysnl\snode.h
+	<string>
+	<vector>
+
+1494691503 c:\users\darknessh\desktop\myintellistudio\studio\mysnl\mysnl\scanner.h
+	<map>
+	<cstring>
+	<fstream>
+
+1494861886 source:c:\users\darknessh\desktop\myintellistudio\studio\mysnl\mysnl\reserchlr1.cpp
+	"ReserchLR1.h"
+
+1494773247 c:\users\darknessh\desktop\myintellistudio\studio\mysnl\mysnl\reserchlr1.h
+	<cstdio>
+	<cstring>
+	<map>
+	<vector>
+	<queue>
+	<algorithm>
+	"stdio.h"
+	<iostream>
+	<string>
+	<fstream>
+	<string.h>
+	<stack>
+	"scanner.h"
+
+1494861467 source:c:\users\darknessh\desktop\myintellistudio\studio\mysnl\mysnl\scanner.cpp
+	<iostream>
+	<cctype>
+	<string>
+	"scanner.h"
+
+1494691918 source:c:\users\darknessh\desktop\myintellistudio\studio\mysnl\mysnl\snode.cpp
+	<iostream>
+	"Snode.h"
+
+1494861907 source:c:\users\darknessh\desktop\myintellistudio\studio\mysnl\mysnl\main.cpp
+	<iostream>
+	"include/Python.h"
+	"scanner.h"
+	"parse.h"
+	"parserLL1.h"
+	"ReserchLR1.h"
+
+1494844102 c:\users\darknessh\desktop\myintellistudio\studio\mysnl\mysnl\parserll1.h
+	<cstring>
+	<map>
+	<fstream>
+	"parse.h"
+
+1494862002 source:c:\users\darknessh\desktop\myintellistudio\studio\mysnl\mysnl\parserll1.cpp
+	<map>
+	<stack>
+	<fstream>
+	<cstring>
+	<iostream>
+	"parserLL1.h"
+
+1494766804 c:\users\darknessh\desktop\myintellistudio\studio\mysnl\mysnl\include\python.h
+	"math.h"
+	"patchlevel.h"
+	"pyconfig.h"
+	"pymacconfig.h"
+	<limits.h>
+	<stdio.h>
+	<string.h>
+	<errno.h>
+	<stdlib.h>
+	<unistd.h>
+	<stddef.h>
+	<assert.h>
+	"pyport.h"
+	"pymacro.h"
+	"pyatomic.h"
+	"pymath.h"
+	"pytime.h"
+	"pymem.h"
+	"object.h"
+	"objimpl.h"
+	"typeslots.h"
+	"pyhash.h"
+	"pydebug.h"
+	"bytearrayobject.h"
+	"bytesobject.h"
+	"unicodeobject.h"
+	"longobject.h"
+	"longintrepr.h"
+	"boolobject.h"
+	"floatobject.h"
+	"complexobject.h"
+	"rangeobject.h"
+	"memoryobject.h"
+	"tupleobject.h"
+	"listobject.h"
+	"dictobject.h"
+	"odictobject.h"
+	"enumobject.h"
+	"setobject.h"
+	"methodobject.h"
+	"moduleobject.h"
+	"funcobject.h"
+	"classobject.h"
+	"fileobject.h"
+	"pycapsule.h"
+	"traceback.h"
+	"sliceobject.h"
+	"cellobject.h"
+	"iterobject.h"
+	"genobject.h"
+	"descrobject.h"
+	"warnings.h"
+	"weakrefobject.h"
+	"structseq.h"
+	"namespaceobject.h"
+	"codecs.h"
+	"pyerrors.h"
+	"pystate.h"
+	"pyarena.h"
+	"modsupport.h"
+	"pythonrun.h"
+	"pylifecycle.h"
+	"ceval.h"
+	"sysmodule.h"
+	"intrcheck.h"
+	"import.h"
+	"abstract.h"
+	"bltinmodule.h"
+	"compile.h"
+	"eval.h"
+	"pyctype.h"
+	"pystrtod.h"
+	"pystrcmp.h"
+	"dtoa.h"
+	"fileutils.h"
+	"pyfpe.h"
+
+1442077568 c:\users\darknessh\desktop\myintellistudio\studio\mysnl\mysnl\include\patchlevel.h
+
+1437415774 c:\users\darknessh\desktop\myintellistudio\studio\mysnl\mysnl\include\pyconfig.h
+	<io.h>
+	<stdlib.h>
+	<float.h>
+	<basetsd.h>
+	<stdio.h>
+
+1437415756 c:\users\darknessh\desktop\myintellistudio\studio\mysnl\mysnl\include\pymacconfig.h
+
+1437415756 c:\users\darknessh\desktop\myintellistudio\studio\mysnl\mysnl\include\pyport.h
+	"pyconfig.h"
+	<inttypes.h>
+	<stdint.h>
+	<stdlib.h>
+	<ieeefp.h>
+	<math.h>
+	<sys/time.h>
+	<time.h>
+	<sys/time.h>
+	<time.h>
+	<sys/select.h>
+	<sys/stat.h>
+	<stat.h>
+	<sys/types.h>
+	<sys/termio.h>
+	<termios.h>
+	<osreldate.h>
+	<ctype.h>
+	<wctype.h>
+
+1437415756 c:\users\darknessh\desktop\myintellistudio\studio\mysnl\mysnl\include\pymacro.h
+
+1437415756 c:\users\darknessh\desktop\myintellistudio\studio\mysnl\mysnl\include\pyatomic.h
+	"dynamic_annotations.h"
+	"pyconfig.h"
+	<stdatomic.h>
+
+1437415756 c:\users\darknessh\desktop\myintellistudio\studio\mysnl\mysnl\include\dynamic_annotations.h
+
+1440447196 c:\users\darknessh\desktop\myintellistudio\studio\mysnl\mysnl\include\pymath.h
+	"pyconfig.h"
+
+1437415756 c:\users\darknessh\desktop\myintellistudio\studio\mysnl\mysnl\include\pytime.h
+	"pyconfig.h"
+	"object.h"
+
+1437415756 c:\users\darknessh\desktop\myintellistudio\studio\mysnl\mysnl\include\object.h
+
+1437415756 c:\users\darknessh\desktop\myintellistudio\studio\mysnl\mysnl\include\pymem.h
+	"pyport.h"
+
+1437415756 c:\users\darknessh\desktop\myintellistudio\studio\mysnl\mysnl\include\objimpl.h
+	"pymem.h"
+
+1440447196 c:\users\darknessh\desktop\myintellistudio\studio\mysnl\mysnl\include\typeslots.h
+
+1437415756 c:\users\darknessh\desktop\myintellistudio\studio\mysnl\mysnl\include\pyhash.h
+
+1437415756 c:\users\darknessh\desktop\myintellistudio\studio\mysnl\mysnl\include\pydebug.h
+
+1437415756 c:\users\darknessh\desktop\myintellistudio\studio\mysnl\mysnl\include\bytearrayobject.h
+	<stdarg.h>
+
+1437415756 c:\users\darknessh\desktop\myintellistudio\studio\mysnl\mysnl\include\bytesobject.h
+	<stdarg.h>
+
+1437415756 c:\users\darknessh\desktop\myintellistudio\studio\mysnl\mysnl\include\unicodeobject.h
+	<stdarg.h>
+	<ctype.h>
+	<time.h>
+	<wchar.h>
+
+1437415756 c:\users\darknessh\desktop\myintellistudio\studio\mysnl\mysnl\include\longobject.h
+
+1437415756 c:\users\darknessh\desktop\myintellistudio\studio\mysnl\mysnl\include\longintrepr.h
+
+1437415756 c:\users\darknessh\desktop\myintellistudio\studio\mysnl\mysnl\include\boolobject.h
+
+1437415756 c:\users\darknessh\desktop\myintellistudio\studio\mysnl\mysnl\include\floatobject.h
+
+1437415756 c:\users\darknessh\desktop\myintellistudio\studio\mysnl\mysnl\include\complexobject.h
+
+1437415756 c:\users\darknessh\desktop\myintellistudio\studio\mysnl\mysnl\include\rangeobject.h
+
+1437415756 c:\users\darknessh\desktop\myintellistudio\studio\mysnl\mysnl\include\memoryobject.h
+
+1437415756 c:\users\darknessh\desktop\myintellistudio\studio\mysnl\mysnl\include\tupleobject.h
+
+1437415756 c:\users\darknessh\desktop\myintellistudio\studio\mysnl\mysnl\include\listobject.h
+
+1437415756 c:\users\darknessh\desktop\myintellistudio\studio\mysnl\mysnl\include\dictobject.h
+
+1440447196 c:\users\darknessh\desktop\myintellistudio\studio\mysnl\mysnl\include\odictobject.h
+
+1437415756 c:\users\darknessh\desktop\myintellistudio\studio\mysnl\mysnl\include\enumobject.h
+
+1437415756 c:\users\darknessh\desktop\myintellistudio\studio\mysnl\mysnl\include\setobject.h
+
+1437415756 c:\users\darknessh\desktop\myintellistudio\studio\mysnl\mysnl\include\methodobject.h
+
+1440447196 c:\users\darknessh\desktop\myintellistudio\studio\mysnl\mysnl\include\moduleobject.h
+
+1437415756 c:\users\darknessh\desktop\myintellistudio\studio\mysnl\mysnl\include\funcobject.h
+
+1437415756 c:\users\darknessh\desktop\myintellistudio\studio\mysnl\mysnl\include\classobject.h
+
+1437415756 c:\users\darknessh\desktop\myintellistudio\studio\mysnl\mysnl\include\fileobject.h
+
+1437415756 c:\users\darknessh\desktop\myintellistudio\studio\mysnl\mysnl\include\pycapsule.h
+
+1440447196 c:\users\darknessh\desktop\myintellistudio\studio\mysnl\mysnl\include\traceback.h
+	"pystate.h"
+
+1440447196 c:\users\darknessh\desktop\myintellistudio\studio\mysnl\mysnl\include\pystate.h
+
+1437415756 c:\users\darknessh\desktop\myintellistudio\studio\mysnl\mysnl\include\sliceobject.h
+
+1437415756 c:\users\darknessh\desktop\myintellistudio\studio\mysnl\mysnl\include\cellobject.h
+
+1437415756 c:\users\darknessh\desktop\myintellistudio\studio\mysnl\mysnl\include\iterobject.h
+
+1440447196 c:\users\darknessh\desktop\myintellistudio\studio\mysnl\mysnl\include\genobject.h
+
+1437415756 c:\users\darknessh\desktop\myintellistudio\studio\mysnl\mysnl\include\descrobject.h
+
+1437415756 c:\users\darknessh\desktop\myintellistudio\studio\mysnl\mysnl\include\warnings.h
+
+1437415756 c:\users\darknessh\desktop\myintellistudio\studio\mysnl\mysnl\include\weakrefobject.h
+
+1437415756 c:\users\darknessh\desktop\myintellistudio\studio\mysnl\mysnl\include\structseq.h
+
+1437415756 c:\users\darknessh\desktop\myintellistudio\studio\mysnl\mysnl\include\namespaceobject.h
+
+1437415756 c:\users\darknessh\desktop\myintellistudio\studio\mysnl\mysnl\include\codecs.h
+
+1440447196 c:\users\darknessh\desktop\myintellistudio\studio\mysnl\mysnl\include\pyerrors.h
+	<stdarg.h>
+
+1437415756 c:\users\darknessh\desktop\myintellistudio\studio\mysnl\mysnl\include\pyarena.h
+
+1440447196 c:\users\darknessh\desktop\myintellistudio\studio\mysnl\mysnl\include\modsupport.h
+	<stdarg.h>
+
+1437415756 c:\users\darknessh\desktop\myintellistudio\studio\mysnl\mysnl\include\pythonrun.h
+
+1437415756 c:\users\darknessh\desktop\myintellistudio\studio\mysnl\mysnl\include\pylifecycle.h
+
+1440447196 c:\users\darknessh\desktop\myintellistudio\studio\mysnl\mysnl\include\ceval.h
+
+1437415756 c:\users\darknessh\desktop\myintellistudio\studio\mysnl\mysnl\include\sysmodule.h
+
+1437415756 c:\users\darknessh\desktop\myintellistudio\studio\mysnl\mysnl\include\intrcheck.h
+
+1437415756 c:\users\darknessh\desktop\myintellistudio\studio\mysnl\mysnl\include\import.h
+
+1437415756 c:\users\darknessh\desktop\myintellistudio\studio\mysnl\mysnl\include\abstract.h
+
+1437415756 c:\users\darknessh\desktop\myintellistudio\studio\mysnl\mysnl\include\bltinmodule.h
+
+1437415756 c:\users\darknessh\desktop\myintellistudio\studio\mysnl\mysnl\include\compile.h
+	"code.h"
+
+1437415756 c:\users\darknessh\desktop\myintellistudio\studio\mysnl\mysnl\include\code.h
+
+1437415756 c:\users\darknessh\desktop\myintellistudio\studio\mysnl\mysnl\include\eval.h
+
+1437415756 c:\users\darknessh\desktop\myintellistudio\studio\mysnl\mysnl\include\pyctype.h
+
+1437415756 c:\users\darknessh\desktop\myintellistudio\studio\mysnl\mysnl\include\pystrtod.h
+
+1437415756 c:\users\darknessh\desktop\myintellistudio\studio\mysnl\mysnl\include\pystrcmp.h
+
+1437415756 c:\users\darknessh\desktop\myintellistudio\studio\mysnl\mysnl\include\dtoa.h
+
+1437415756 c:\users\darknessh\desktop\myintellistudio\studio\mysnl\mysnl\include\fileutils.h
+
+1437415756 c:\users\darknessh\desktop\myintellistudio\studio\mysnl\mysnl\include\pyfpe.h
+	<signal.h>
+	<setjmp.h>
+	<math.h>
+

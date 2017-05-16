@@ -1,0 +1,10 @@
+{
+    "background":"#002B36",
+    "normal":"#839496",
+    "type":"#859900",
+    "define":"#93A1A1",
+    "math_synbol":"#B58900",
+    "num":"#CB4B16",
+    "comment":"#586E75",
+    "str_char":"#268BD2"
+}

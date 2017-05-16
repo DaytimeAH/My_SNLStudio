@@ -1,0 +1,1120 @@
+3 C:/Users/DarknessH/Desktop/myIntelliStudio/out/a.snl C:/Users/DarknessH/Desktop/myIntelliStudio/out/syntax_tree_LR1ZZ.json
+Starting lexical analysis: 
+1 : PROGRAM , program
+1 : ID , error
+3 : VAR , var
+3 : INTEGER , integer
+3 : ID , s
+3 : ; , ;
+5 : INTEGER , integer
+5 : ID , t
+5 : ; , ;
+7 : PROCEDURE , procedure
+7 : ID , factor
+7 : ( , (
+7 : ID , intaeger
+7 : ID , n
+7 : ; , ;
+7 : VAR , var
+7 : INTEGER , integer
+7 : ID , m
+7 : ) , )
+7 : ; , ;
+9 : VAR , var
+9 : INTEGER , integer
+9 : ID , w
+9 : ; , ;
+11 : BEGIN , begin
+16 : ID , factor
+16 : ( , (
+16 : ID , n
+16 : - , -
+16 : INTC_VAL , 1
+16 : , , ,
+16 : ID , w
+16 : ) , )
+16 : ; , ;
+18 : ID , m
+18 : := , :=
+18 : ID , n
+18 : * , *
+18 : ID , w
+21 : END , end
+23 : BEGIN , begin
+25 : READ , read
+25 : ( , (
+25 : ID , s
+25 : ) , )
+25 : ; , ;
+27 : ID , factor
+27 : ( , (
+27 : ID , s
+27 : , , ,
+27 : ID , t
+27 : ) , )
+27 : ; , ;
+29 : WRITE , write
+29 : ( , (
+29 : ID , t
+29 : ) , )
+31 : END , end
+31 : . , .
+ok
+Staring LR1 analysis: result save to wz.json
+#
+input[0] = 1
+str:PROGRAM
+lastcondition:1
+2/-4
+1
+input[1] = 24
+str:ID
+lastcondition:4
+25/-10
+2
+input[2] = 3
+str:VAR
+lastcondition:10
+4/3
+input[2] = 3
+str:VAR
+lastcondition:9
+4/2
+input[2] = 3
+str:VAR
+lastcondition:3
+4/5
+input[2] = 3
+str:VAR
+lastcondition:6
+4/-15
+3
+input[3] = 20
+str:INTEGER
+lastcondition:15
+21/-42
+4
+input[4] = 24
+str:ID
+lastcondition:42
+25/15
+input[4] = 24
+str:ID
+lastcondition:39
+25/12
+input[4] = 24
+str:ID
+lastcondition:38
+25/-75
+5
+input[5] = 38
+str:SEMI
+lastcondition:75
+39/37
+input[5] = 38
+str:SEMI
+lastcondition:125
+39/36
+input[5] = 38
+str:SEMI
+lastcondition:74
+39/-124
+6
+input[6] = 20
+str:INTEGER
+lastcondition:124
+21/-42
+7
+input[7] = 24
+str:ID
+lastcondition:42
+25/15
+input[7] = 24
+str:ID
+lastcondition:39
+25/12
+input[7] = 24
+str:ID
+lastcondition:38
+25/-75
+8
+input[8] = 38
+str:SEMI
+lastcondition:75
+39/37
+input[8] = 38
+str:SEMI
+lastcondition:125
+39/36
+input[8] = 38
+str:SEMI
+lastcondition:74
+39/-124
+9
+input[9] = 4
+str:PROCEDURE
+lastcondition:124
+5/34
+input[9] = 4
+str:PROCEDURE
+lastcondition:171
+5/33
+input[9] = 4
+str:PROCEDURE
+lastcondition:172
+5/35
+input[9] = 4
+str:PROCEDURE
+lastcondition:171
+5/33
+input[9] = 4
+str:PROCEDURE
+lastcondition:37
+5/32
+input[9] = 4
+str:PROCEDURE
+lastcondition:14
+5/31
+input[9] = 4
+str:PROCEDURE
+lastcondition:13
+5/-36
+10
+input[10] = 24
+str:ID
+lastcondition:36
+25/-73
+11
+input[11] = 34
+str:LPAREN
+lastcondition:73
+35/45
+input[11] = 34
+str:LPAREN
+lastcondition:72
+35/-123
+12
+input[12] = 24
+str:ID
+lastcondition:123
+25/-41
+13
+input[13] = 24
+str:ID
+lastcondition:41
+25/14
+input[13] = 24
+str:ID
+lastcondition:169
+25/-207
+14
+input[14] = 38
+str:SEMI
+lastcondition:207
+39/54
+input[14] = 38
+str:SEMI
+lastcondition:227
+39/53
+input[14] = 38
+str:SEMI
+lastcondition:206
+39/51
+input[14] = 38
+str:SEMI
+lastcondition:168
+39/-205
+15
+input[15] = 3
+str:VAR
+lastcondition:205
+4/-170
+16
+input[16] = 20
+str:INTEGER
+lastcondition:170
+21/-42
+17
+input[17] = 24
+str:ID
+lastcondition:42
+25/15
+input[17] = 24
+str:ID
+lastcondition:39
+25/12
+input[17] = 24
+str:ID
+lastcondition:208
+25/-207
+18
+input[18] = 35
+str:RPAREN
+lastcondition:207
+36/54
+input[18] = 35
+str:RPAREN
+lastcondition:227
+36/53
+input[18] = 35
+str:RPAREN
+lastcondition:229
+36/52
+input[18] = 35
+str:RPAREN
+lastcondition:168
+36/49
+input[18] = 35
+str:RPAREN
+lastcondition:204
+36/48
+input[18] = 35
+str:RPAREN
+lastcondition:226
+36/50
+input[18] = 35
+str:RPAREN
+lastcondition:204
+36/48
+input[18] = 35
+str:RPAREN
+lastcondition:167
+36/47
+input[18] = 35
+str:RPAREN
+lastcondition:166
+36/-203
+19
+input[19] = 38
+str:SEMI
+lastcondition:203
+39/-225
+20
+input[20] = 3
+str:VAR
+lastcondition:225
+4/5
+input[20] = 3
+str:VAR
+lastcondition:6
+4/-15
+21
+input[21] = 20
+str:INTEGER
+lastcondition:15
+21/-42
+22
+input[22] = 24
+str:ID
+lastcondition:42
+25/15
+input[22] = 24
+str:ID
+lastcondition:39
+25/12
+input[22] = 24
+str:ID
+lastcondition:38
+25/-75
+23
+input[23] = 38
+str:SEMI
+lastcondition:75
+39/37
+input[23] = 38
+str:SEMI
+lastcondition:125
+39/36
+input[23] = 38
+str:SEMI
+lastcondition:74
+39/-124
+24
+input[24] = 5
+str:BEGIN
+lastcondition:124
+6/34
+input[24] = 5
+str:BEGIN
+lastcondition:171
+6/33
+input[24] = 5
+str:BEGIN
+lastcondition:37
+6/32
+input[24] = 5
+str:BEGIN
+lastcondition:14
+6/31
+input[24] = 5
+str:BEGIN
+lastcondition:13
+6/39
+input[24] = 5
+str:BEGIN
+lastcondition:33
+6/4
+input[24] = 5
+str:BEGIN
+lastcondition:35
+6/41
+input[24] = 5
+str:BEGIN
+lastcondition:236
+6/-243
+25
+input[25] = 24
+str:ID
+lastcondition:243
+25/-27
+26
+input[26] = 34
+str:LPAREN
+lastcondition:27
+35/-56
+27
+input[27] = 24
+str:ID
+lastcondition:56
+25/-67
+28
+input[28] = 31
+str:MINUS
+lastcondition:67
+32/94
+input[28] = 31
+str:MINUS
+lastcondition:114
+32/93
+input[28] = 31
+str:MINUS
+lastcondition:66
+32/92
+input[28] = 31
+str:MINUS
+lastcondition:62
+32/87
+input[28] = 31
+str:MINUS
+lastcondition:108
+32/86
+input[28] = 31
+str:MINUS
+lastcondition:94
+32/-107
+29
+input[29] = 25
+str:INTC_VAL
+lastcondition:107
+26/103
+input[29] = 25
+str:INTC_VAL
+lastcondition:142
+26/-64
+30
+input[30] = 39
+str:COMMA
+lastcondition:64
+40/90
+input[30] = 39
+str:COMMA
+lastcondition:62
+40/87
+input[30] = 39
+str:COMMA
+lastcondition:108
+40/86
+input[30] = 39
+str:COMMA
+lastcondition:94
+40/84
+input[30] = 39
+str:COMMA
+lastcondition:141
+40/83
+input[30] = 39
+str:COMMA
+lastcondition:186
+40/85
+input[30] = 39
+str:COMMA
+lastcondition:141
+40/83
+input[30] = 39
+str:COMMA
+lastcondition:93
+40/-140
+31
+input[31] = 24
+str:ID
+lastcondition:140
+25/-67
+32
+input[32] = 35
+str:RPAREN
+lastcondition:67
+36/94
+input[32] = 35
+str:RPAREN
+lastcondition:114
+36/93
+input[32] = 35
+str:RPAREN
+lastcondition:66
+36/92
+input[32] = 35
+str:RPAREN
+lastcondition:62
+36/87
+input[32] = 35
+str:RPAREN
+lastcondition:108
+36/86
+input[32] = 35
+str:RPAREN
+lastcondition:94
+36/84
+input[32] = 35
+str:RPAREN
+lastcondition:141
+36/83
+input[32] = 35
+str:RPAREN
+lastcondition:93
+36/79
+input[32] = 35
+str:RPAREN
+lastcondition:139
+36/78
+input[32] = 35
+str:RPAREN
+lastcondition:185
+36/80
+input[32] = 35
+str:RPAREN
+lastcondition:139
+36/78
+input[32] = 35
+str:RPAREN
+lastcondition:92
+36/-138
+33
+input[33] = 38
+str:SEMI
+lastcondition:138
+39/76
+input[33] = 38
+str:SEMI
+lastcondition:54
+39/68
+input[33] = 38
+str:SEMI
+lastcondition:52
+39/66
+input[33] = 38
+str:SEMI
+lastcondition:21
+39/-51
+34
+input[34] = 24
+str:ID
+lastcondition:51
+25/-27
+35
+input[35] = 27
+str:ASSIGN
+lastcondition:27
+28/94
+input[35] = 27
+str:ASSIGN
+lastcondition:55
+28/-91
+36
+input[36] = 24
+str:ID
+lastcondition:91
+25/-67
+37
+input[37] = 32
+str:TIMES
+lastcondition:67
+33/94
+input[37] = 32
+str:TIMES
+lastcondition:114
+33/93
+input[37] = 32
+str:TIMES
+lastcondition:66
+33/92
+input[37] = 32
+str:TIMES
+lastcondition:62
+33/-110
+38
+input[38] = 24
+str:ID
+lastcondition:110
+25/104
+input[38] = 24
+str:ID
+lastcondition:109
+25/-67
+39
+input[39] = 6
+str:END
+lastcondition:67
+7/94
+input[39] = 6
+str:END
+lastcondition:114
+7/93
+input[39] = 6
+str:END
+lastcondition:66
+7/92
+input[39] = 6
+str:END
+lastcondition:62
+7/87
+input[39] = 6
+str:END
+lastcondition:108
+7/86
+input[39] = 6
+str:END
+lastcondition:153
+7/88
+input[39] = 6
+str:END
+lastcondition:108
+7/86
+input[39] = 6
+str:END
+lastcondition:137
+7/84
+input[39] = 6
+str:END
+lastcondition:183
+7/83
+input[39] = 6
+str:END
+lastcondition:136
+7/69
+input[39] = 6
+str:END
+lastcondition:53
+7/67
+input[39] = 6
+str:END
+lastcondition:52
+7/66
+input[39] = 6
+str:END
+lastcondition:21
+7/59
+input[39] = 6
+str:END
+lastcondition:50
+7/58
+input[39] = 6
+str:END
+lastcondition:90
+7/60
+input[39] = 6
+str:END
+lastcondition:50
+7/58
+input[39] = 6
+str:END
+lastcondition:248
+7/-250
+40
+input[40] = 5
+str:BEGIN
+lastcondition:250
+6/57
+input[40] = 5
+str:BEGIN
+lastcondition:242
+6/56
+input[40] = 5
+str:BEGIN
+lastcondition:241
+6/43
+input[40] = 5
+str:BEGIN
+lastcondition:246
+6/42
+input[40] = 5
+str:BEGIN
+lastcondition:34
+6/40
+input[40] = 5
+str:BEGIN
+lastcondition:33
+6/4
+input[40] = 5
+str:BEGIN
+lastcondition:5
+6/-12
+41
+input[41] = 17
+str:READ
+lastcondition:12
+18/-30
+42
+input[42] = 34
+str:LPAREN
+lastcondition:30
+35/-70
+43
+input[43] = 24
+str:ID
+lastcondition:70
+25/-121
+44
+input[44] = 35
+str:RPAREN
+lastcondition:121
+36/73
+input[44] = 35
+str:RPAREN
+lastcondition:120
+36/-164
+45
+input[45] = 38
+str:SEMI
+lastcondition:164
+39/72
+input[45] = 38
+str:SEMI
+lastcondition:24
+39/63
+input[45] = 38
+str:SEMI
+lastcondition:21
+39/-51
+46
+input[46] = 24
+str:ID
+lastcondition:51
+25/-27
+47
+input[47] = 34
+str:LPAREN
+lastcondition:27
+35/-56
+48
+input[48] = 24
+str:ID
+lastcondition:56
+25/-67
+49
+input[49] = 39
+str:COMMA
+lastcondition:67
+40/94
+input[49] = 39
+str:COMMA
+lastcondition:114
+40/93
+input[49] = 39
+str:COMMA
+lastcondition:66
+40/92
+input[49] = 39
+str:COMMA
+lastcondition:62
+40/87
+input[49] = 39
+str:COMMA
+lastcondition:108
+40/86
+input[49] = 39
+str:COMMA
+lastcondition:94
+40/84
+input[49] = 39
+str:COMMA
+lastcondition:141
+40/83
+input[49] = 39
+str:COMMA
+lastcondition:93
+40/-140
+50
+input[50] = 24
+str:ID
+lastcondition:140
+25/-67
+51
+input[51] = 35
+str:RPAREN
+lastcondition:67
+36/94
+input[51] = 35
+str:RPAREN
+lastcondition:114
+36/93
+input[51] = 35
+str:RPAREN
+lastcondition:66
+36/92
+input[51] = 35
+str:RPAREN
+lastcondition:62
+36/87
+input[51] = 35
+str:RPAREN
+lastcondition:108
+36/86
+input[51] = 35
+str:RPAREN
+lastcondition:94
+36/84
+input[51] = 35
+str:RPAREN
+lastcondition:141
+36/83
+input[51] = 35
+str:RPAREN
+lastcondition:93
+36/79
+input[51] = 35
+str:RPAREN
+lastcondition:139
+36/78
+input[51] = 35
+str:RPAREN
+lastcondition:185
+36/80
+input[51] = 35
+str:RPAREN
+lastcondition:139
+36/78
+input[51] = 35
+str:RPAREN
+lastcondition:92
+36/-138
+52
+input[52] = 38
+str:SEMI
+lastcondition:138
+39/76
+input[52] = 38
+str:SEMI
+lastcondition:54
+39/68
+input[52] = 38
+str:SEMI
+lastcondition:52
+39/66
+input[52] = 38
+str:SEMI
+lastcondition:21
+39/-51
+53
+input[53] = 18
+str:WRITE
+lastcondition:51
+19/-31
+54
+input[54] = 34
+str:LPAREN
+lastcondition:31
+35/-71
+55
+input[55] = 24
+str:ID
+lastcondition:71
+25/-67
+56
+input[56] = 35
+str:RPAREN
+lastcondition:67
+36/94
+input[56] = 35
+str:RPAREN
+lastcondition:114
+36/93
+input[56] = 35
+str:RPAREN
+lastcondition:66
+36/92
+input[56] = 35
+str:RPAREN
+lastcondition:62
+36/87
+input[56] = 35
+str:RPAREN
+lastcondition:108
+36/86
+input[56] = 35
+str:RPAREN
+lastcondition:113
+36/84
+input[56] = 35
+str:RPAREN
+lastcondition:155
+36/83
+input[56] = 35
+str:RPAREN
+lastcondition:122
+36/-165
+57
+input[57] = 6
+str:END
+lastcondition:165
+7/74
+input[57] = 6
+str:END
+lastcondition:25
+7/64
+input[57] = 6
+str:END
+lastcondition:21
+7/59
+input[57] = 6
+str:END
+lastcondition:50
+7/58
+input[57] = 6
+str:END
+lastcondition:90
+7/60
+input[57] = 6
+str:END
+lastcondition:50
+7/58
+input[57] = 6
+str:END
+lastcondition:90
+7/60
+input[57] = 6
+str:END
+lastcondition:50
+7/58
+input[57] = 6
+str:END
+lastcondition:20
+7/-49
+58
+input[58] = 36
+str:DOT
+lastcondition:49
+37/57
+input[58] = 36
+str:DOT
+lastcondition:11
+37/-19
+59
+input[59] = 43
+str:#
+lastcondition:19
+44/1
+input[59] = 43
+str:#
+19:  Program
+1:    DOT .
+15:    ProgramBody
+1:      END end
+14:      StmList
+13:        StmMore
+12:          StmList
+9:            StmMore
+8:              StmList
+7:                StmMore
+7:                Stm
+6:                  OutputStm
+1:                    RPAREN )
+5:                    Exp
+4:                      OtherTerm
+4:                      Term
+3:                        OtherFactor
+3:                        Factor
+2:                          Variable
+1:                            VariMore
+1:                            ID t
+1:                    LPAREN (
+1:                    WRITE write
+1:              SEMI ;
+11:            Stm
+10:              AssCall
+9:                CallStmRest
+1:                  RPAREN )
+8:                  ActParamList
+7:                    ActParamMore
+6:                      ActParamList
+5:                        ActParamMore
+5:                        Exp
+4:                          OtherTerm
+4:                          Term
+3:                            OtherFactor
+3:                            Factor
+2:                              Variable
+1:                                VariMore
+1:                                ID t
+1:                      COMMA ,
+5:                    Exp
+4:                      OtherTerm
+4:                      Term
+3:                        OtherFactor
+3:                        Factor
+2:                          Variable
+1:                            VariMore
+1:                            ID s
+1:                  LPAREN (
+1:              ID factor
+1:          SEMI ;
+4:        Stm
+3:          InputStm
+1:            RPAREN )
+2:            Invar
+1:              ID s
+1:            LPAREN (
+1:            READ read
+1:      BEGIN begin
+18:    DeclarePart
+17:      ProcDecPart
+16:        ProcDec
+15:          ProcDecMore
+15:          ProcBody
+14:            ProgramBody
+1:              END end
+13:              StmList
+12:                StmMore
+11:                  StmList
+10:                    StmMore
+10:                    Stm
+9:                      AssCall
+8:                        AssignmentRest
+7:                          Exp
+6:                            OtherTerm
+6:                            Term
+5:                              OtherFactor
+4:                                Term
+3:                                  OtherFactor
+3:                                  Factor
+2:                                    Variable
+1:                                      VariMore
+1:                                      ID w
+2:                                MultOp
+1:                                  TIMES *
+3:                              Factor
+2:                                Variable
+1:                                  VariMore
+1:                                  ID n
+1:                          ASSIGN :=
+1:                          VariMore
+1:                      ID m
+1:                  SEMI ;
+11:                Stm
+10:                  AssCall
+9:                    CallStmRest
+1:                      RPAREN )
+8:                      ActParamList
+7:                        ActParamMore
+6:                          ActParamList
+5:                            ActParamMore
+5:                            Exp
+4:                              OtherTerm
+4:                              Term
+3:                                OtherFactor
+3:                                Factor
+2:                                  Variable
+1:                                    VariMore
+1:                                    ID w
+1:                          COMMA ,
+6:                        Exp
+5:                          OtherTerm
+4:                            Exp
+3:                              OtherTerm
+3:                              Term
+2:                                OtherFactor
+2:                                Factor
+1:                                  INTC_VAL 1
+2:                            AddOp
+1:                              MINUS -
+4:                          Term
+3:                            OtherFactor
+3:                            Factor
+2:                              Variable
+1:                                VariMore
+1:                                ID n
+1:                      LPAREN (
+1:                  ID factor
+1:              BEGIN begin
+8:          ProcDecPart
+7:            DeclarePart
+6:              ProcDecPart
+6:              VarDecPart
+5:                VarDec
+4:                  VarDecList
+1:                    VarDecMore
+1:                    SEMI ;
+2:                    VarIdList
+1:                      VarIdMore
+1:                      ID w
+3:                    TypeDef
+2:                      BaseType
+1:                        INTEGER integer
+1:                  VAR var
+1:              TypeDecPart
+1:          SEMI ;
+1:          RPAREN )
+8:          ParamList
+7:            ParamDecList
+6:              ParamMore
+5:                ParamDecList
+4:                  ParamMore
+4:                  Param
+2:                    FormList
+1:                      FidMore
+1:                      ID m
+3:                    TypeDef
+2:                      BaseType
+1:                        INTEGER integer
+1:                    VAR var
+1:                SEMI ;
+3:              Param
+2:                FormList
+1:                  FidMore
+1:                  ID n
+2:                TypeDef
+1:                  ID intaeger
+1:          LPAREN (
+2:          ProcName
+1:            ID factor
+1:          PROCEDURE procedure
+8:      VarDecPart
+7:        VarDec
+6:          VarDecList
+5:            VarDecMore
+4:              VarDecList
+1:                VarDecMore
+1:                SEMI ;
+2:                VarIdList
+1:                  VarIdMore
+1:                  ID t
+3:                TypeDef
+2:                  BaseType
+1:                    INTEGER integer
+1:            SEMI ;
+2:            VarIdList
+1:              VarIdMore
+1:              ID s
+3:            TypeDef
+2:              BaseType
+1:                INTEGER integer
+1:          VAR var
+3:      TypeDecPart
+3:    ProgramHead
+2:      ProgramName
+1:        ID error
+1:      PROGRAM program
+acc
+over
+LR1: No error occured.
+ok LR1
+
